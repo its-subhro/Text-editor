@@ -31,7 +31,7 @@ export default function Navbar(props) {
     <>
     <nav className={`navbar ${navColor}`}>
   <div className="container-fluid">
-    <a className="navbar-brand" style={props.mode!=='light'? {color:'white'}:{color:'black'}}><h2>Text Editor</h2></a>
+    <a href='/' className="navbar-brand" style={props.mode!=='light'? {color:'white'}:{color:'black'}}><h2>Text Editor</h2></a>
     <div className="form-check form-switch">
   <input className="form-check-input" onClick={buttonText} type="checkbox" role="switch" id="flexSwitchCheckDefault"/>
   <label className="form-check-label" style={props.mode!=='light'? {color:'white'}:{color:'black'}} htmlFor="flexSwitchCheckDefault">{btntext}</label>
