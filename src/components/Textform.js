@@ -21,13 +21,12 @@ export default function Textform(props) {
   }
 
   const toCamelCase = () => {
-    // Split the sentence into words
+   
     var words = text.split(' ');
 
-    // Convert each word to camel case
     var camelCase = '';
     for (var i = 0; i < words.length; i++) {
-        // Capitalize the first letter of each word
+       
         camelCase += words[i].charAt(0).toUpperCase() + words[i].slice(1).toLowerCase() + " ";
     }
 

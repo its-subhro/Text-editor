@@ -2,10 +2,10 @@ import React,{useState} from 'react'
 import './App.css';
 import Navbar from './components/Navbar';
 import Textform from './components/Textform';
-// import About from './components/About';
 
 function App() {
   const [mode,setMode] = useState('light')
+  
   const togglebtn=()=>{
     if(mode === 'light') {
       setMode('dark')
@@ -22,7 +22,6 @@ function App() {
       <div className="container my-5">
       <Textform heading= 'Describe yourself in not more than 150 words'  mode={mode}/>
       </div>
-      {/* <About/> */}
     </>
   );
 }

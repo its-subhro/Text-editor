@@ -4,16 +4,20 @@ export default function Navbar(props) {
 
   const [btntext,setbtnText] = useState('Enable Dark Mode')
   const [navColor,setnavColor] = useState('bg-body-tertiary')
+
   const buttonText =()=>{
     props.togglebtn()
     navcolor()
     if (btntext==='Enable Dark Mode') {
       setbtnText('Enable Light Mode')
+      
     }
     else{
       setbtnText('Enable Dark Mode')
+      
     }
   }
+
   const navcolor=()=>{
     if (navColor==='bg-body-tertiary') {
       setnavColor('bg-dark border-bottom border-body')
